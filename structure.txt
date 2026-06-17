@@ -1,0 +1,50 @@
+project/
+│
+├── data/
+│   ├── document1.pdf
+│   ├── document2.pdf
+│   └── ...
+│
+├── chroma_db/
+│
+├── ingestion/
+│   ├── __init__.py
+│   ├── run_ingestion.py
+│   ├── loader.py
+│   ├── parser.py
+│   ├── metadata_extractor.py
+│   ├── classifier.py
+│   ├── chunker.py
+│   ├── embedder.py
+│   ├── vectordb.py
+│   ├── pipeline.py
+│   ├── schemas.py
+│   └── config.py
+│
+├── retrieval/
+│   ├── __init__.py
+│   ├── query_processing.py
+│   ├── retrieval_pipeline.py
+│   ├── grading.py
+│   └── utils.py
+│
+├── generation/
+│   ├── __init__.py
+│   ├── prompts.py
+│   ├── generator.py
+│   └── validation.py
+│
+├── corrective_rag/
+│   ├── __init__.py
+│   ├── state.py
+│   ├── nodes.py
+│   ├── graph.py
+│   ├── web_search.py
+│   └── run_rag.py
+│
+├── .env
+├── requirements.txt
+└── README.md
+
+# python -m ingestion.run_ingestion
+# python -m corrective_rag.run_rag

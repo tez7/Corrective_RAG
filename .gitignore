@@ -1,0 +1,54 @@
+# ==========================================
+# Environment Variables & Credentials (CRITICAL)
+# ==========================================
+.env
+.env.local
+.env.*.local
+venv/
+
+# ==========================================
+# Python Configuration (Backend)
+# ==========================================
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+backend/venv/
+backend/.venv/
+backend/env/
+.pytest_cache/
+
+# ==========================================
+# Node / JavaScript Configuration (Frontend)
+# ==========================================
+frontend/node_modules/
+frontend/dist/
+frontend/.next/
+frontend/out/
+.npm
+*.log
+
+# ==========================================
+# Local Data Dynamics
+# ==========================================
+# Keeps your track logs and local db file private to your machine
+data/database.json
+!data/database.json.example
+
+# ==========================================
+# IDE & Operating System Trash
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+#==========================================
+# Data Folder
+#==========================================
+data
+chroma_db/
+
+# files with direct extention
+*.zip
+
